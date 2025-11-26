@@ -80,7 +80,7 @@ A **self-healing multi-agent system** where robots:
 
 **1. Clone Repository**
 ```bash
-git clone https://github.com/YOUR_USERNAME/agent_fleet_code.git
+git clone https://github.com/RuGG12/agentfleet-self-healing-robots.git
 cd agent_fleet_code
 ```
 
@@ -188,8 +188,8 @@ pip install rclpy geometry-msgs nav-msgs
 ### Launch Full Simulation
 ```bash
 cd ros_deployment
-chmod +x run_demo.sh
-./run_demo.sh
+chmod +x fleet_launch_demo.sh
+./fleet_launch_demo.sh
 ```
 
 **What Happens:**
@@ -459,10 +459,9 @@ This is a competition submission, but contributions are welcome post-deadline!
 
 ## 🙋 Contact & Support
 
-**Developer:** [Your Name]  
-**Email:** your.email@domain.com  
-**LinkedIn:** [Your LinkedIn Profile]  
-**Competition:** [Kaggle Submission Link]
+**Developer:** Rugved Raote 
+**Email:** rugvedraote@gmail.com 
+**LinkedIn:** www.linkedin.com/in/rugved-raote  
 
 **Questions?** Open an issue or join the discussion on Kaggle!
 
@@ -502,4 +501,3 @@ See [LICENSE](LICENSE) file for full details.
 
 ---
 
-**Built with 💙 by [Your Name] | Powered by Gemini 2.5 & Google ADK**
