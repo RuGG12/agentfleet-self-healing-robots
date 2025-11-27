@@ -215,6 +215,38 @@ chmod +x fleet_launch_demo.sh
 ./fleet_launch_demo.sh
 ```
 
+### Troubleshooting
+
+**Issue: `bad interpreter: /bin/bash^M`**
+
+This occurs if the script was edited on Windows. Fix with:
+```bash
+# Install dos2unix
+sudo apt-get install dos2unix
+
+# Convert line endings
+dos2unix fleet_launch_demo.sh
+
+# Make executable and run
+chmod +x fleet_launch_demo.sh
+./fleet_launch_demo.sh
+```
+
+**What Happens:**
+1. Gazebo launches with warehouse environment
+2. Sticky zones painted (red tiles)
+3. Three TurtleBot3 robots spawn
+4. Manager assigns targets
+5. Watch autonomous recovery in 3D
+```
+
+### Launch Full Simulation
+```bash
+cd ros_deployment
+chmod +x fleet_launch_demo.sh
+./fleet_launch_demo.sh
+```
+
 **What Happens:**
 1. Gazebo launches with warehouse environment
 2. Sticky zones painted (red tiles)
