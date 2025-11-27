@@ -1,8 +1,3 @@
-Here is the complete, polished `README.md` file with the corrected ASCII art and proper formatting.
-
-You can copy the code block below and save it directly as `README.md` in your repository root.
-
-````markdown
 # 🤖 AgentFleet: Enterprise Self-Healing Robot Fleet
 
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-blue.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
@@ -32,7 +27,7 @@ A **self-healing multi-agent system** where robots:
 
 ## 📺 Demo Video
 
-**[▶️ Watch AgentFleet in Action (2:50)](YOUR_YOUTUBE_LINK_HERE)**
+**[▶️ Watch AgentFleet in Action (2:50)](YOUR_YOUTUBE_LINK)**
 
 **What You'll See:**
 1. Problem statement & real-world impact
@@ -63,11 +58,8 @@ A **self-healing multi-agent system** where robots:
 | Total Recoveries | **21** autonomous recoveries |
 | Strategy Learning | **3x faster** by trial 15 vs trial 1 |
 | Human Intervention | **0** required |
-
 > **Benchmark Innovation:** Unlike standard agents that simply chat, AgentFleet includes a rigorous evaluation framework (`evaluate_fleet.py`) that proves a **100% success rate across 15 adversarial trials**, demonstrating true enterprise reliability.
-
 ---
-
 ## 🚀 Development Journey
 
 AgentFleet's **100% success rate** was achieved through systematic refinement and iterative improvements.
@@ -79,6 +71,8 @@ AgentFleet's **100% success rate** was achieved through systematic refinement an
 | **v1.0 (Initial)** | **79.68%** | Basic recovery logic, single-strategy approach |
 | **v2.0 (Optimized)** | **87.62%** | Multi-strategy selection, improved stuck detection |
 | **v3.0 (Final)** | **100%** | Context-aware memory, adaptive learning, fleet-wide knowledge sharing |
+
+---
 
 ### 🔧 What Changed
 
@@ -92,47 +86,50 @@ AgentFleet's **100% success rate** was achieved through systematic refinement an
 - Introduced location-aware recovery selection  
 - Added long-term memory updates for smarter future decisions  
 
-This progression demonstrates the power of **iterative agent development** using the **ADK framework**, leading to a fully self-healing and adaptive robot fleet.
-
 ---
+
+This progression demonstrates the power of **iterative agent development** using the **ADK framework**, leading to a fully self-healing and adaptive robot fleet.
 
 ## 🚀 Quick Start (5 Minutes)
 
 ### Prerequisites
+```bash
+# Required
 - Python 3.10+
 - 8GB RAM
 - Google API Key (get from: https://aistudio.google.com/app/apikey)
-- *Optional (for ROS mode):* Ubuntu 22.04, ROS 2 Humble, Gazebo 11
+
+# Optional (for ROS mode)
+- Ubuntu 22.04
+- ROS 2 Humble
+- Gazebo 11
+```
 
 ### Installation
 
 **1. Clone Repository**
 ```bash
-git clone [https://github.com/RuGG12/agentfleet-self-healing-robots.git](https://github.com/RuGG12/agentfleet-self-healing-robots.git)
+git clone https://github.com/RuGG12/agentfleet-self-healing-robots.git
 cd agent_fleet_code
-````
+```
 
 **2. Install Dependencies**
-
 ```bash
 pip install -r requirements.txt
 ```
 
 **3. Set API Key**
-
 ```bash
 export GOOGLE_API_KEY="your_gemini_key_here"
 ```
 
 **4. Run Demo**
-
 ```bash
 python fleet_orchestrator.py
 ```
 
 **Expected Output:**
-
-```text
+```
 ======================================================================
 INITIALIZING FLEET ORCHESTRATOR
 ======================================================================
@@ -147,7 +144,7 @@ INITIALIZING FLEET ORCHESTRATOR
 📊 Recovery Stats: 3 recoveries succeeded
 ```
 
------
+---
 
 ## 📊 Full Evaluation Suite
 
@@ -158,31 +155,27 @@ python evaluate_fleet.py
 ```
 
 **What It Tests:**
+1. **North Crossing** - Guaranteed sticky zone traversal
+2. **East Crossing** - Perpendicular deadlock scenarios
+3. **Diagonal NE** - Multi-axis interference
+4. **Center Targets** - Destinations inside sticky zones
+5. **Mixed Directions** - 3-way robot conflicts
 
-1.  **North Crossing** - Guaranteed sticky zone traversal
-2.  **East Crossing** - Perpendicular deadlock scenarios
-3.  **Diagonal NE** - Multi-axis interference
-4.  **Center Targets** - Destinations inside sticky zones
-5.  **Mixed Directions** - 3-way robot conflicts
-
-**Runtime:** \~45 minutes
+**Runtime:** ~45 minutes
 
 **Generates:**
+- `evaluation_results/enhanced_charts_*.png` - **Executive Performance Reports** (Success Rates, Learning Curves)
+- `evaluation_results/enhanced_results_*.json` - **Executive Performance Data Logs**
+- `fleet_observability.jsonl` - **Distributed Trace Logs** (Structured JSON with `trace_id`/`span_id` for deep debugging)
+- `recovery_history.json` - **Audit Log** of Learned Strategies
+- `enterprise_dashboard.json` - **Operational Health Metrics** (Real-time Ops Status)
 
-  - `evaluation_results/enhanced_charts_*.png` - **Executive Performance Reports**
-  - `evaluation_results/enhanced_results_*.json` - **Executive Performance Data Logs**
-  - `fleet_observability.jsonl` - **Distributed Trace Logs**
-  - `recovery_history.json` - **Audit Log** of Learned Strategies
-  - `enterprise_dashboard.json` - **Operational Health Metrics**
 
------
-
+---
 ## 🐳 Docker Deployment
-
 ### Deploy to Cloud Run (Optional)
 
 The Dockerfile is deployment-ready for Google Cloud Run. Example commands:
-
 ```bash
 # Build and tag
 docker build -t agentfleet-manager:latest .
@@ -201,13 +194,13 @@ gcloud run deploy agentfleet-manager \
 ```
 
 **Note:** Deployment is optional for this competition. The Dockerfile serves as proof of deployment capability.
+```
 
------
+---
 
 ## 🦾 ROS 2 Integration (Production Mode)
 
 ### Prerequisites
-
 ```bash
 # Ubuntu 22.04 only
 sudo apt update
@@ -216,7 +209,6 @@ pip install rclpy geometry-msgs nav-msgs
 ```
 
 ### Launch Full Simulation
-
 ```bash
 cd ros_deployment
 chmod +x fleet_launch_demo.sh
@@ -226,109 +218,108 @@ chmod +x fleet_launch_demo.sh
 ### Troubleshooting
 
 **Issue: `bad interpreter: /bin/bash^M`**
-This occurs if the script was edited on Windows. Fix with:
 
+This occurs if the script was edited on Windows. Fix with:
 ```bash
+# Install dos2unix
 sudo apt-get install dos2unix
+
+# Convert line endings
 dos2unix fleet_launch_demo.sh
+
+# Make executable and run
 chmod +x fleet_launch_demo.sh
 ./fleet_launch_demo.sh
 ```
 
 **What Happens:**
+1. Gazebo launches with warehouse environment
+2. Sticky zones painted (red tiles)
+3. Three TurtleBot3 robots spawn
+4. Manager assigns targets
+5. Watch autonomous recovery in 3D
 
-1.  Gazebo launches with warehouse environment
-2.  Sticky zones painted (red tiles)
-3.  Three TurtleBot3 robots spawn
-4.  Manager assigns targets
-5.  Watch autonomous recovery in 3D
 
------
-
-## 🏗️ Architecture Deep Dive
-
-### System Integration
-
-```text
+**Architecture:**
+```
 ┌─────────────────────────────────────────┐
-│       AgentFleet Manager (Python)       │
-│       ↕ (ros_tools.py HAL layer)        │
+│      AgentFleet Manager (Python)        │
+│      ↕ (ros_tools.py HAL layer)         │
 ├─────────────────────────────────────────┤
-│            ROS 2 Middleware             │
-│   /cmd_vel  /odom  /scan  /tf           │
+│         ROS 2 Middleware                │
+│  /cmd_vel  /odom  /scan  /tf            │
 ├─────────────────────────────────────────┤
-│            Gazebo Simulation            │
-│    Physics Engine + Sensor Emulation    │
+│         Gazebo Simulation               │
+│  Physics Engine + Sensor Emulation      │
 └─────────────────────────────────────────┘
 ```
 
+---
+
+## 🏗️ Architecture Deep Dive
+
 ### Agent Hierarchy
 
-```text
-                        ┌─────────────────────┐
-                        │    MANAGER AGENT    │
-                        │   (Orchestrator)    │
-                        │ • Task assignment   │
-                        │ • Clearance control │
-                        │ • Memory mgmt       │
-                        └──────────┬──────────┘
-                                   │
-            ┌──────────────────────┼──────────────────────┐
-            ▼                      ▼                      ▼
-    ┌───────────┐          ┌───────────┐          ┌───────────┐
-    │ WORKER 1  │          │ WORKER 2  │          │ WORKER 3  │
-    │  (Robot)  │          │  (Robot)  │          │  (Robot)  │
-    │ • Navigate│          │ • Navigate│          │ • Navigate│
-    │ • Detect  │          │ • Detect  │          │ • Detect  │
-    │ • Recover │          │ • Recover │          │ • Recover │
-    └─────┬─────┘          └─────┬─────┘          └─────┬─────┘
-          │                      │                      │
-          └──────────────────────┼──────────────────────┘
-                                 │
-                        ┌────────▼─────────┐
-                        │   RECOVERY DB    │
-                        │   (SQLite LTM)   │
-                        │ • Location→Strat │
-                        │ • Success history│
-                        └───────────────────┘
+```
+                    ┌─────────────────────┐
+                    │   MANAGER AGENT     │
+                    │ (Orchestrator)      │
+                    │ • Task assignment   │
+                    │ • Clearance control │
+                    │ • Memory mgmt       │
+                    └──────────┬──────────┘
+                               │
+                ┌──────────────┼──────────────┐
+                ▼              ▼              ▼
+         ┌───────────┐  ┌───────────┐  ┌───────────┐
+         │ WORKER 1  │  │ WORKER 2  │  │ WORKER 3  │
+         │ (Robot)   │  │ (Robot)   │  │ (Robot)   │
+         │ • Navigate│  │ • Navigate│  │ • Navigate│
+         │ • Detect  │  │ • Detect  │  │ • Detect  │
+         │ • Recover │  │ • Recover │  │ • Recover │
+         └─────┬─────┘  └─────┬─────┘  └─────┬─────┘
+               └──────────────┴───────────────┘
+                              │
+                    ┌─────────▼─────────┐
+                    │  RECOVERY DB      │
+                    │  (SQLite LTM)     │
+                    │ • Location→Strategy│
+                    │ • Success history │
+                    └───────────────────┘
 ```
 
 ### Key Components
 
-1.  **Manager Agent** (`manager_agent.py`)
+1. **Manager Agent** (`manager_agent.py`)
+   - Coordinates 3 worker agents
+   - Manages airspace clearance (prevents collisions)
+   - Maintains long-term memory via Memory Bank
+   - Logs all decisions with structured observability
 
-      - Coordinates 3 worker agents
-      - Manages airspace clearance (prevents collisions)
-      - Maintains long-term memory via Memory Bank
-      - Logs all decisions with structured observability
+2. **Worker Agents** (`worker_agent.py`)
+   - Navigate to assigned targets
+   - Detect stuck conditions autonomously
+   - Query recovery DB for proven strategies
+   - Execute adaptive recovery maneuvers
 
-2.  **Worker Agents** (`worker_agent.py`)
+3. **Recovery Database** (`recovery_database.py`)
+   - **Hybrid Memory Architecture:**
+     - **Session State:** SQLite (ADK Standard) for robust conversation handling.
+     - **Knowledge Base:** JSON (`recovery_history.json`) for portability and simple inspection of learned strategies.
+   - Schema: `(location, strategy, outcome, robot_id, timestamp)`
+   - AI-powered query via Gemini 2.5
+   - Fleet-wide learning (not per-robot)
 
-      - Navigate to assigned targets
-      - Detect stuck conditions autonomously
-      - Query recovery DB for proven strategies
-      - Execute adaptive recovery maneuvers
+4. **Observability Layer** (`observability.py`)
+   - Structured JSON logging
+   - Distributed tracing with UUIDs
+   - Real-time metrics in `enterprise_dashboard.json`
 
-3.  **Recovery Database** (`recovery_database.py`)
-
-      - **Hybrid Memory Architecture:**
-          - **Session State:** SQLite (ADK Standard) for robust conversation handling.
-          - **Knowledge Base:** JSON (`recovery_history.json`) for portability.
-      - Schema: `(location, strategy, outcome, robot_id, timestamp)`
-      - AI-powered query via Gemini 2.5
-      - Fleet-wide learning (not per-robot)
-
-4.  **Observability Layer** (`observability.py`)
-
-      - Structured JSON logging
-      - Distributed tracing with UUIDs
-      - Real-time metrics in `enterprise_dashboard.json`
-
------
+---
 
 ## 📁 Project Structure
 
-```text
+```
 agent_fleet_code/
 │
 ├── evaluation_results/         # Generated outputs (logs, charts, data)
@@ -370,32 +361,28 @@ agent_fleet_code/
 └── worker_agent.py             # Robot Controller Agent logic
 ```
 
------
+---
 
 ## 🔬 Technical Innovation
 
 ### What Makes AgentFleet Unique?
 
 **1. First Persistent Multi-Agent Memory for Robotics**
-
-  - Unlike RL approaches that train per-robot
-  - Shared SQLite database enables fleet-wide learning
-  - Strategies proven by Robot A are immediately available to Robots B & C
+- Unlike RL approaches that train per-robot
+- Shared SQLite database enables fleet-wide learning
+- Strategies proven by Robot A are immediately available to Robots B & C
 
 **2. Dual-Mode Architecture**
-
-  - **Simulation Mode:** Fast Python testing (5 min demos)
-  - **ROS Mode:** Production-ready integration (real robots)
-  - Same agent logic in both modes (no code duplication)
+- **Simulation Mode:** Fast Python testing (5 min demos)
+- **ROS Mode:** Production-ready integration (real robots)
+- Same agent logic in both modes (no code duplication)
 
 **3. Context-Aware Recovery**
-
-  - AI analyzes past failures **at specific locations**
-  - Avoids known bad strategies automatically
-  - Learns optimal solutions per environment region
+- AI analyzes past failures **at specific locations**
+- Avoids known bad strategies automatically
+- Learns optimal solutions per environment region
 
 **4. Enterprise-Grade Observability**
-
 ```json
 {
   "timestamp": "2025-11-25T03:01:19.545873",
@@ -410,21 +397,19 @@ agent_fleet_code/
 }
 ```
 
------
+---
 
 ## 🎓 Learning Demonstration
 
 ### Trial 1 vs Trial 15 Performance
 
 **Trial 1 (No Learning):**
-
-```text
+```
 robot_1 stuck at [7,6] → tries random strategy → 3 attempts → success
 ```
 
 **Trial 15 (Full Learning):**
-
-```text
+```
 robot_1 stuck at [7,6] → queries DB → executes proven strategy → 1 attempt → success
 ```
 
@@ -433,7 +418,6 @@ robot_1 stuck at [7,6] → queries DB → executes proven strategy → 1 attempt
 ### Recovery Database Evolution
 
 **After 5 Trials:**
-
 ```sql
 SELECT strategy, COUNT(*) as uses, 
        SUM(CASE WHEN outcome='SUCCESS' THEN 1 ELSE 0 END) as successes
@@ -443,138 +427,124 @@ GROUP BY strategy;
 
 | Strategy | Uses | Success Rate |
 |----------|------|--------------|
-| reverse\_only | 12 | 100% |
-| reverse\_and\_turn\_right | 9 | 100% |
+| reverse_only | 12 | 100% |
+| reverse_and_turn_right | 9 | 100% |
 
 **Key Insight:** System learned that `reverse_only` works better for north/south deadlocks, while `reverse_and_turn_right` is optimal for east/west.
 
------
+---
 
 ## 💼 Enterprise Value Proposition
 
 ### Cost Savings Calculation
 
 **Baseline (Traditional System):**
-
-  - Recovery success rate: 60%
-  - Average recovery time: 5 minutes
-  - Requires human intervention: $50/occurrence
-  - Fleet size: 1,000 robots
-  - Failures per day: 200
+- Recovery success rate: 60%
+- Average recovery time: 5 minutes
+- Requires human intervention: $50/occurrence
+- Fleet size: 1,000 robots
+- Failures per day: 200
 
 **With AgentFleet:**
-
-  - Recovery success rate: 100%
-  - Average recovery time: 1.2 minutes
-  - Human intervention: $0
-  - Annual savings: **$8.4M**
+- Recovery success rate: 100%
+- Average recovery time: 1.2 minutes
+- Human intervention: $0
+- Annual savings: **$8.4M**
 
 **ROI:** Pays for itself in the first month of deployment
 
------
+---
 
 ## 🛠️ Development Roadmap
 
 ### Phase 1: ✅ Completed
-
-  - [x] Multi-agent coordination with ADK
-  - [x] Persistent cross-robot learning
-  - [x] ROS 2 integration
-  - [x] Enterprise observability
-  - [x] Adversarial evaluation suite
+- [x] Multi-agent coordination with ADK
+- [x] Persistent cross-robot learning
+- [x] ROS 2 integration
+- [x] Enterprise observability
+- [x] Adversarial evaluation suite
 
 ### Phase 2: 🚧 In Progress
-
-  - [ ] Multi-environment transfer learning
-  - [ ] Dynamic task reallocation
-  - [ ] Predictive failure detection with LSTM
+- [ ] Multi-environment transfer learning
+- [ ] Dynamic task reallocation
+- [ ] Predictive failure detection with LSTM
 
 ### Phase 3: 📋 Planned
+- [ ] Edge deployment (TFLite on-robot)
+- [ ] Swarm coordination (100+ robots)
+- [ ] Real warehouse pilot program
 
-  - [ ] Edge deployment (TFLite on-robot)
-  - [ ] Swarm coordination (100+ robots)
-  - [ ] Real warehouse pilot program
-
------
+---
 
 ## 🤝 Contributing
 
-This is a competition submission, but contributions are welcome post-deadline\!
+This is a competition submission, but contributions are welcome post-deadline!
 
 **Guidelines:**
+1. Fork the repository
+2. Create feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit changes (`git commit -m 'Add amazing feature'`)
+4. Push to branch (`git push origin feature/amazing-feature`)
+5. Open Pull Request
 
-1.  Fork the repository
-2.  Create feature branch (`git checkout -b feature/amazing-feature`)
-3.  Commit changes (`git commit -m 'Add amazing feature'`)
-4.  Push to branch (`git push origin feature/amazing-feature`)
-5.  Open Pull Request
-
------
+---
 
 ## 📚 References
 
 ### ADK Documentation
-
-  - [Agent Development Kit](https://github.com/google/agent-development-kit)
-  - [Memory Bank Guide](https://github.com/google/agent-development-kit/blob/main/docs/memory.md)
-  - [Tool Creation](https://github.com/google/agent-development-kit/blob/main/docs/tools.md)
+- [Agent Development Kit](https://github.com/google/agent-development-kit)
+- [Memory Bank Guide](https://github.com/google/agent-development-kit/blob/main/docs/memory.md)
+- [Tool Creation](https://github.com/google/agent-development-kit/blob/main/docs/tools.md)
 
 ### ROS 2 Resources
-
-  - [ROS 2 Humble Docs](https://docs.ros.org/en/humble/)
-  - [Navigation2](https://navigation.ros.org/)
-  - [Gazebo Integration](http://gazebosim.org/tutorials)
+- [ROS 2 Humble Docs](https://docs.ros.org/en/humble/)
+- [Navigation2](https://navigation.ros.org/)
+- [Gazebo Integration](http://gazebosim.org/tutorials)
 
 ### Academic Papers
+- *Multi-Agent Reinforcement Learning in Robotics* (IEEE 2024)
+- *Context-Aware Recovery in Autonomous Systems* (NeurIPS 2023)
 
-  - *Multi-Agent Reinforcement Learning in Robotics* (IEEE 2024)
-  - *Context-Aware Recovery in Autonomous Systems* (NeurIPS 2023)
-
------
+---
 
 ## 🙋 Contact & Support
 
 **Developer:** Rugved Raote  
 **Email:** rugvedraote@gmail.com  
-**LinkedIn:** www.linkedin.com/in/rugved-raote
+**LinkedIn:** www.linkedin.com/in/rugved-raote  
 
-**Questions?** Open an issue or join the discussion on Kaggle\!
+**Questions?** Open an issue or join the discussion on Kaggle!
 
------
+---
 
 ## 📜 License
 
 This project is licensed under **Creative Commons Attribution-ShareAlike 4.0 International (CC-BY-SA 4.0)**.
 
 **You are free to:**
-
-  - ✅ Use commercially
-  - ✅ Modify and adapt
-  - ✅ Distribute
+- ✅ Use commercially
+- ✅ Modify and adapt
+- ✅ Distribute
 
 **Under conditions:**
+- 📝 Attribute original author
+- 🔄 Share derivatives under the same license
 
-  - 📝 Attribute original author
-  - 🔄 Share derivatives under the same license
+See [LICENSE](LICENSE) file for full details.
 
-See [LICENSE](https://www.google.com/search?q=LICENSE) file for full details.
-
------
+---
 
 ## 🏆 Acknowledgments
 
-  - **Google & Kaggle** - For the AI Agents Intensive Course
-  - **ADK Team** - For the excellent agent development framework
-  - **ROS Community** - For robotics middleware
-  - **Gemini Team** - For the powerful LLM capabilities
+- **Google & Kaggle** - For the AI Agents Intensive Course
+- **ADK Team** - For the excellent agent development framework
+- **ROS Community** - For robotics middleware
+- **Gemini Team** - For the powerful LLM capabilities
 
------
+---
 
 ## 🎬 Final Note
 
 **AgentFleet proves that AI agents are production-ready for enterprise workflows.** This is not a prototype; it's a glimpse into the future of warehouse automation.
 
-**Star ⭐ this repo if you found it valuable\!**
-
-```
-```
+**Star ⭐ this repo if you found it valuable!**
