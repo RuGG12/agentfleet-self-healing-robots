@@ -5,7 +5,7 @@
 [![Google ADK](https://img.shields.io/badge/Google-ADK-4285F4?logo=google)](https://github.com/google/agent-development-kit)
 [![Kaggle Competition](https://img.shields.io/badge/Kaggle-Competition-20BEFF?logo=kaggle)](https://www.kaggle.com/competitions/agents-intensive-capstone-project)
 
-> **Winner Submission:** Agents Intensive Capstone Project 2025 - Enterprise Track
+> **Submission for:** Agents Intensive Capstone Project 2025 - Enterprise Track
 
 **AgentFleet** is a production-ready multi-agent system that eliminates warehouse robot downtime through collaborative learning and adaptive recovery. Powered by **Google Gemini 2.5** and the **Agent Development Kit (ADK)**, it achieves **100% autonomous recovery** in adversarial testing.
 
