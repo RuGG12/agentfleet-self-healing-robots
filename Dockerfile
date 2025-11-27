@@ -24,8 +24,7 @@ COPY . .
 
 # Create data directory and move DB
 RUN mkdir -p /app/data && \
-    cp agent_fleet.db /app/data/agent_fleet.db && \
-    rm agent_fleet.db
+    touch /app/data/agent_fleet.db
 
 # Environment variables
 ENV PYTHONUNBUFFERED=1
@@ -37,4 +36,5 @@ RUN useradd -m -u 1000 agentfleet && \
 USER agentfleet
 
 # Entry point
+
 CMD ["python", "fleet_orchestrator.py"]
