@@ -1,0 +1,38 @@
+# AgentFleet - Python Dependencies
+# Competition: Agents Intensive Capstone Project 2025
+# Track: Enterprise Agents
+
+# ============================================================
+# CORE DEPENDENCIES (Required)
+# ============================================================
+# Google Agent Development Kit
+google-adk>=0.1.0
+google-generativeai>=0.8.0
+
+# Database & persistence
+sqlalchemy>=2.0.0
+
+# Data processing & visualization
+numpy>=1.24.0
+matplotlib>=3.7.0
+
+# Async utilities
+aiofiles>=23.2.0
+
+# ============================================================
+# OPTIONAL: ROS 2 Integration
+# ============================================================
+# These require Ubuntu 22.04 + ROS 2 Humble pre-installed:
+#   sudo apt install ros-humble-desktop ros-humble-turtlebot3-*
+# Then uncomment:
+# rclpy>=3.3.0
+# geometry-msgs>=4.0.0
+# nav-msgs>=4.0.0
+
+# ============================================================
+# Installation
+# ============================================================
+# Basic mode:    pip install -r requirements.txt
+# ROS mode:      Uncomment ROS packages above, then install
+# 
+# Requires: Python 3.10+, 8GB RAM, GOOGLE_API_KEY env variable
