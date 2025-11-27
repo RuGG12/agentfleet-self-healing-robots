@@ -141,37 +141,27 @@ python evaluate_fleet.py
 
 ---
 ## 🐳 Docker Deployment
+### Deploy to Cloud Run (Optional)
 
-### Build Container
+The Dockerfile is deployment-ready for Google Cloud Run. Example commands:
 ```bash
+# Build and tag
 docker build -t agentfleet-manager:latest .
-```
 
-### Run Locally
-```bash
-docker run -d \
-  --name agentfleet-manager \
-  -e GOOGLE_API_KEY=${GOOGLE_API_KEY} \
-  -v $(pwd)/data:/app/data \
-  -p 8080:8080 \
-  agentfleet-manager: latest
-```
+# Push to your registry (replace with your GCP project ID)
+docker tag agentfleet-manager gcr.io/YOUR_GCP_PROJECT_ID/agentfleet-manager:latest
+docker push gcr.io/YOUR_GCP_PROJECT_ID/agentfleet-manager:latest
 
-### Deploy to Cloud Run
-```bash
-# Tag for Google Container Registry
-docker tag agentfleet-manager gcr.io/YOUR_PROJECT/agentfleet-manager:latest
-
-# Push to GCR
-docker push gcr.io/YOUR_PROJECT/agentfleet-manager:latest
-
-# Deploy to Cloud Run
+# Deploy
 gcloud run deploy agentfleet-manager \
-  --image gcr.io/YOUR_PROJECT/agentfleet-manager:latest \
+  --image gcr.io/YOUR_GCP_PROJECT_ID/agentfleet-manager:latest \
   --platform managed \
   --region us-central1 \
   --allow-unauthenticated \
   --set-env-vars GOOGLE_API_KEY=${GOOGLE_API_KEY}
+```
+
+**Note:** Deployment is optional for this competition. The Dockerfile serves as proof of deployment capability.
 ```
 
 ---
