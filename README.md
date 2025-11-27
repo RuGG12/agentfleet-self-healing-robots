@@ -58,7 +58,7 @@ A **self-healing multi-agent system** where robots:
 | Total Recoveries | **21** autonomous recoveries |
 | Strategy Learning | **3x faster** by trial 15 vs trial 1 |
 | Human Intervention | **0** required |
-
+> **Benchmark Innovation:** Unlike standard agents that simply chat, AgentFleet includes a rigorous evaluation framework (`evaluate_fleet.py`) that proves a **100% success rate across 15 adversarial trials**, demonstrating true enterprise reliability.
 ---
 
 ## 🚀 Quick Start (5 Minutes)
@@ -253,7 +253,9 @@ chmod +x fleet_launch_demo.sh
    - Execute adaptive recovery maneuvers
 
 3. **Recovery Database** (`recovery_database.py`)
-   - Persistent SQLite storage (survives restarts)
+   - **Hybrid Memory Architecture:**
+     - **Session State:** SQLite (ADK Standard) for robust conversation handling.
+     - **Knowledge Base:** JSON (`recovery_history.json`) for portability and simple inspection of learned strategies.
    - Schema: `(location, strategy, outcome, robot_id, timestamp)`
    - AI-powered query via Gemini 2.5
    - Fleet-wide learning (not per-robot)
