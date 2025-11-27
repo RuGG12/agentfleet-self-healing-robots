@@ -140,7 +140,6 @@ python evaluate_fleet.py
 - `recovery_history.json` - Learning trace
 
 ---
-
 ## 🐳 Docker Deployment
 
 ### Build Container
@@ -155,13 +154,15 @@ docker run -d \
   -e GOOGLE_API_KEY=${GOOGLE_API_KEY} \
   -v $(pwd)/data:/app/data \
   -p 8080:8080 \
-  agentfleet-manager:latest
+  agentfleet-manager: latest
 ```
 
 ### Deploy to Cloud Run
 ```bash
-# Push to Google Container Registry
+# Tag for Google Container Registry
 docker tag agentfleet-manager gcr.io/YOUR_PROJECT/agentfleet-manager:latest
+
+# Push to GCR
 docker push gcr.io/YOUR_PROJECT/agentfleet-manager:latest
 
 # Deploy to Cloud Run
