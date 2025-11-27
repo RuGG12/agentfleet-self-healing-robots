@@ -59,6 +59,8 @@ A **self-healing multi-agent system** where robots:
 | Strategy Learning | **3x faster** by trial 15 vs trial 1 |
 | Human Intervention | **0** required |
 > **Benchmark Innovation:** Unlike standard agents that simply chat, AgentFleet includes a rigorous evaluation framework (`evaluate_fleet.py`) that proves a **100% success rate across 15 adversarial trials**, demonstrating true enterprise reliability.
+> 
+> *Results from controlled evaluation environment. Performance may vary with different sticky zone configurations or API latency.
 ---
 ## 🚀 Development Journey
 
