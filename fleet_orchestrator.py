@@ -250,7 +250,7 @@ class FleetOrchestrator:
         return response_text
 
     async def worker_execution_loop(self, robot_id: str, target_x: int, target_y: int,
-                                    manager_session_id: str, max_ticks: int = 50):
+                                    manager_session_id: str, max_ticks: int = 200):
         """
         Main execution loop for a single worker robot.
         Handles clearance, navigation, state monitoring, and recovery.
@@ -495,3 +495,4 @@ async def main():
 if __name__ == "__main__":
 
     asyncio.run(main())
+
