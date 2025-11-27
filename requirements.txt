@@ -11,6 +11,7 @@ google-genai>=0.8.0
 
 # Database & persistence
 sqlalchemy>=2.0.0
+aiosqlite>=0.20.0 
 
 # Data processing & visualization
 numpy>=1.24.0
@@ -37,3 +38,4 @@ aiofiles>=23.2.0
 # 
 
 # Requires: Python 3.10+, 8GB RAM, GOOGLE_API_KEY env variable
+
