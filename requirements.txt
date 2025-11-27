@@ -7,7 +7,7 @@
 # ============================================================
 # Google Agent Development Kit
 google-adk>=0.1.0
-google-generativeai>=0.8.0
+google-genai>=0.8.0
 
 # Database & persistence
 sqlalchemy>=2.0.0
@@ -35,4 +35,5 @@ aiofiles>=23.2.0
 # Basic mode:    pip install -r requirements.txt
 # ROS mode:      Uncomment ROS packages above, then install
 # 
+
 # Requires: Python 3.10+, 8GB RAM, GOOGLE_API_KEY env variable
