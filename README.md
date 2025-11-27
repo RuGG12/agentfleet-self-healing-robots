@@ -240,20 +240,6 @@ chmod +x fleet_launch_demo.sh
 5. Watch autonomous recovery in 3D
 ```
 
-### Launch Full Simulation
-```bash
-cd ros_deployment
-chmod +x fleet_launch_demo.sh
-./fleet_launch_demo.sh
-```
-
-**What Happens:**
-1. Gazebo launches with warehouse environment
-2. Sticky zones painted (red tiles)
-3. Three TurtleBot3 robots spawn
-4. Manager assigns targets
-5. Watch autonomous recovery in 3D
-
 **Architecture:**
 ```
 ┌─────────────────────────────────────────┐
