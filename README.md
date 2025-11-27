@@ -279,36 +279,43 @@ chmod +x fleet_launch_demo.sh
 ```
 agent_fleet_code/
 │
-├── 📄 fleet_orchestrator.py      # Main entry point (demo)
-├── 📄 manager_agent.py            # Orchestrator agent
-├── 📄 worker_agent.py             # Robot controller agents
-├── 📄 manager_tools.py            # Tool implementations
-├── 📄 recovery_database.py        # Persistent memory
-├── 📄 sim_tools.py                # Custom simulation engine
-├── 📄 observability.py            # Structured logging
-├── 📄 evaluate_fleet.py           # Benchmark suite (15 trials)
+├── evaluation_results/         # Generated outputs (logs, charts, data)
 │
-├── 🐳 Dockerfile                  # Container deployment
-├── 📋 requirements.txt            # Python dependencies
+├── ros_deployment/             # ROS 2 Integration & Launch
+│   ├── agent_fleet.db          # Instance-specific database for ROS run
+│   ├── fleet_launch_demo.sh    # Main shell script to launch the ROS demo
+│   ├── fleet_launch.py         # ROS node wrapper for the fleet
+│   ├── fleet_observability.jsonl
+│   ├── fleet_orchestrator.py   # Entry point available within ROS context
+│   ├── manager_agent.py        # Manager logic available to ROS nodes
+│   ├── manager_tools.py
+│   ├── observability.py
+│   ├── recovery_database.py
+│   ├── recovery_history.json
+│   ├── ros_tools.py            # Hardware Abstraction Layer (HAL) for ROS
+│   ├── sim_tools.py
+│   ├── spawn_fleet.py          # Script to spawn robots in Gazebo/Sim
+│   ├── spawn_visuals.py        # Visual markers for simulation
+│   ├── tool_api.py             # Tool interface definitions
+│   ├── tool_wrappers.py        # Wrappers for agent tool execution
+│   └── worker_agent.py         # Worker logic available to ROS nodes
 │
-├── 📂 ros_deployment/             # ROS 2 integration
-│   ├── run_demo.sh                # Launch script
-│   ├── ros_tools.py               # HAL layer
-│   ├── fleet_launch.py            # ROS node wrapper
-│   ├── spawn_fleet.py             # Robot spawner
-│   └── spawn_visuals.py           # Sticky zone painter
-│
-├── 📂 evaluation_results/         # Generated outputs
-│   ├── enhanced_results_*.json    # Trial data
-│   └── enhanced_charts_*.png      # Visualizations
-│
-├── 💾 agent_fleet.db              # SQLite LTM database
-├── 📊 enterprise_dashboard.json   # Metrics dashboard
-├── 📝 recovery_history.json       # Learning trace
-│
-├── 📖 README.md                   # This file
-├── 📖 COMPETITION_WRITEUP.md      # Full submission doc
-└── 📜 LICENSE                     # CC-BY-SA 4.0
+├── agent_fleet.db              # SQLite Long-Term Memory (LTM) database
+├── enterprise_dashboard.json   # Metrics and status dashboard output
+├── evaluate_fleet.py           # Benchmark suite to run fleet trials
+├── fleet_observability.jsonl   # JSON Lines log for fleet events
+├── fleet_orchestrator.py       # Main Python entry point (non-ROS)
+├── LICENSE
+├── manager_agent.py            # High-level Orchestrator Agent logic
+├── manager_tools.py            # Implementation of management tools
+├── observability.py            # Structured logging and monitoring
+├── README.md                   # Project documentation
+├── recovery_database.py        # Persistent memory and fault recovery
+├── recovery_history.json       # Log of recovery actions taken
+├── sim_tools.py                # Custom simulation engine components
+├── tool_api.py                 # Abstract Base Classes/API for Tools
+├── tool_wrappers.py            # Logic to wrap functions as Agent tools
+└── worker_agent.py             # Robot Controller Agent logic
 ```
 
 ---
@@ -401,7 +408,7 @@ GROUP BY strategy;
 - Human intervention: $0
 - Annual savings: **$8.4M**
 
-**ROI:** Pays for itself in first month of deployment
+**ROI:** Pays for itself in the first month of deployment
 
 ---
 
@@ -459,8 +466,8 @@ This is a competition submission, but contributions are welcome post-deadline!
 
 ## 🙋 Contact & Support
 
-**Developer:** Rugved Raote 
-**Email:** rugvedraote@gmail.com 
+**Developer:** Rugved Raote  
+**Email:** rugvedraote@gmail.com  
 **LinkedIn:** www.linkedin.com/in/rugved-raote  
 
 **Questions?** Open an issue or join the discussion on Kaggle!
@@ -478,7 +485,7 @@ This project is licensed under **Creative Commons Attribution-ShareAlike 4.0 Int
 
 **Under conditions:**
 - 📝 Attribute original author
-- 🔄 Share derivatives under same license
+- 🔄 Share derivatives under the same license
 
 See [LICENSE](LICENSE) file for full details.
 
@@ -495,9 +502,6 @@ See [LICENSE](LICENSE) file for full details.
 
 ## 🎬 Final Note
 
-**AgentFleet proves that AI agents are production-ready for enterprise workflows.** This is not a prototype—it's a glimpse into the future of warehouse automation.
+**AgentFleet proves that AI agents are production-ready for enterprise workflows.** This is not a prototype; it's a glimpse into the future of warehouse automation.
 
 **Star ⭐ this repo if you found it valuable!**
-
----
-
