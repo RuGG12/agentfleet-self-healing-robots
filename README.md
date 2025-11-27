@@ -164,9 +164,12 @@ python evaluate_fleet.py
 **Runtime:** ~45 minutes
 
 **Generates:**
-- `enterprise_dashboard.json` - Real-time metrics
-- `evaluation_results/enhanced_charts_*.png` - Visualizations
-- `recovery_history.json` - Learning trace
+- `evaluation_results/enhanced_charts_*.png` - **Executive Performance Reports** (Success Rates, Learning Curves)
+- `evaluation_results/enhanced_results_*.json` - **Executive Performance Data Logs**
+- `fleet_observability.jsonl` - **Distributed Trace Logs** (Structured JSON with `trace_id`/`span_id` for deep debugging)
+- `recovery_history.json` - **Audit Log** of Learned Strategies
+- `enterprise_dashboard.json` - **Operational Health Metrics** (Real-time Ops Status)
+
 
 ---
 ## 🐳 Docker Deployment
