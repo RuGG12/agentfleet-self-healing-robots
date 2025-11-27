@@ -1,0 +1,749 @@
+{
+  "metadata": {
+    "timestamp": "2025-11-20T14:17:07.707369",
+    "total_trials": 15,
+    "scenarios": 5,
+    "evaluation_type": "enhanced_forced_sticky_crossing"
+  },
+  "trials": [
+    {
+      "trial_id": "Scenario_1_North_Crossing_1",
+      "scenario_name": "Scenario_1_North_Crossing",
+      "start_positions": {
+        "robot_1": [
+          7,
+          3
+        ],
+        "robot_2": [
+          6,
+          2
+        ],
+        "robot_3": [
+          5,
+          3
+        ]
+      },
+      "start_time": 1763663804.2676654,
+      "end_time": 1763664053.6261103,
+      "duration": 249.35844492912292,
+      "tasks_assigned": 3,
+      "tasks_completed": 3,
+      "tasks_failed": 0,
+      "success_rate": 1.0,
+      "total_recoveries": 3,
+      "recovery_success_rate": 1.0,
+      "strategies_used": {
+        "reverse_only": 3
+      },
+      "robot_stats": {
+        "robot_1": {
+          "attempts": 1,
+          "successes": 1,
+          "strategies": [
+            "reverse_only"
+          ]
+        },
+        "robot_2": {
+          "attempts": 1,
+          "successes": 1,
+          "strategies": [
+            "reverse_only"
+          ]
+        },
+        "robot_3": {
+          "attempts": 1,
+          "successes": 1,
+          "strategies": [
+            "reverse_only"
+          ]
+        }
+      }
+    },
+    {
+      "trial_id": "Scenario_1_North_Crossing_2",
+      "scenario_name": "Scenario_1_North_Crossing",
+      "start_positions": {
+        "robot_1": [
+          7,
+          3
+        ],
+        "robot_2": [
+          6,
+          2
+        ],
+        "robot_3": [
+          5,
+          3
+        ]
+      },
+      "start_time": 1763664123.645031,
+      "end_time": 1763664231.4939325,
+      "duration": 107.84890151023865,
+      "tasks_assigned": 3,
+      "tasks_completed": 3,
+      "tasks_failed": 0,
+      "success_rate": 1.0,
+      "total_recoveries": 3,
+      "recovery_success_rate": 1.0,
+      "strategies_used": {
+        "reverse_only": 3
+      },
+      "robot_stats": {
+        "robot_1": {
+          "attempts": 1,
+          "successes": 1,
+          "strategies": [
+            "reverse_only"
+          ]
+        },
+        "robot_2": {
+          "attempts": 1,
+          "successes": 1,
+          "strategies": [
+            "reverse_only"
+          ]
+        },
+        "robot_3": {
+          "attempts": 1,
+          "successes": 1,
+          "strategies": [
+            "reverse_only"
+          ]
+        }
+      }
+    },
+    {
+      "trial_id": "Scenario_1_North_Crossing_3",
+      "scenario_name": "Scenario_1_North_Crossing",
+      "start_positions": {
+        "robot_1": [
+          7,
+          3
+        ],
+        "robot_2": [
+          6,
+          2
+        ],
+        "robot_3": [
+          5,
+          3
+        ]
+      },
+      "start_time": 1763664301.506787,
+      "end_time": 1763664410.046223,
+      "duration": 108.53943586349487,
+      "tasks_assigned": 3,
+      "tasks_completed": 3,
+      "tasks_failed": 0,
+      "success_rate": 1.0,
+      "total_recoveries": 3,
+      "recovery_success_rate": 1.0,
+      "strategies_used": {
+        "reverse_only": 3
+      },
+      "robot_stats": {
+        "robot_1": {
+          "attempts": 1,
+          "successes": 1,
+          "strategies": [
+            "reverse_only"
+          ]
+        },
+        "robot_2": {
+          "attempts": 1,
+          "successes": 1,
+          "strategies": [
+            "reverse_only"
+          ]
+        },
+        "robot_3": {
+          "attempts": 1,
+          "successes": 1,
+          "strategies": [
+            "reverse_only"
+          ]
+        }
+      }
+    },
+    {
+      "trial_id": "Scenario_2_East_Crossing_1",
+      "scenario_name": "Scenario_2_East_Crossing",
+      "start_positions": {
+        "robot_1": [
+          2,
+          7
+        ],
+        "robot_2": [
+          3,
+          6
+        ],
+        "robot_3": [
+          2,
+          5
+        ]
+      },
+      "start_time": 1763664480.0551543,
+      "end_time": 1763664544.5130355,
+      "duration": 64.4578812122345,
+      "tasks_assigned": 3,
+      "tasks_completed": 3,
+      "tasks_failed": 0,
+      "success_rate": 1.0,
+      "total_recoveries": 2,
+      "recovery_success_rate": 1.0,
+      "strategies_used": {
+        "reverse_and_turn_right": 2
+      },
+      "robot_stats": {
+        "robot_1": {
+          "attempts": 1,
+          "successes": 1,
+          "strategies": [
+            "reverse_and_turn_right"
+          ]
+        },
+        "robot_2": {
+          "attempts": 0,
+          "successes": 0,
+          "strategies": []
+        },
+        "robot_3": {
+          "attempts": 1,
+          "successes": 1,
+          "strategies": [
+            "reverse_and_turn_right"
+          ]
+        }
+      }
+    },
+    {
+      "trial_id": "Scenario_2_East_Crossing_2",
+      "scenario_name": "Scenario_2_East_Crossing",
+      "start_positions": {
+        "robot_1": [
+          2,
+          7
+        ],
+        "robot_2": [
+          3,
+          6
+        ],
+        "robot_3": [
+          2,
+          5
+        ]
+      },
+      "start_time": 1763664614.5261097,
+      "end_time": 1763664688.599914,
+      "duration": 74.07380437850952,
+      "tasks_assigned": 3,
+      "tasks_completed": 3,
+      "tasks_failed": 0,
+      "success_rate": 1.0,
+      "total_recoveries": 2,
+      "recovery_success_rate": 1.0,
+      "strategies_used": {
+        "reverse_and_turn_right": 2
+      },
+      "robot_stats": {
+        "robot_1": {
+          "attempts": 1,
+          "successes": 1,
+          "strategies": [
+            "reverse_and_turn_right"
+          ]
+        },
+        "robot_2": {
+          "attempts": 0,
+          "successes": 0,
+          "strategies": []
+        },
+        "robot_3": {
+          "attempts": 1,
+          "successes": 1,
+          "strategies": [
+            "reverse_and_turn_right"
+          ]
+        }
+      }
+    },
+    {
+      "trial_id": "Scenario_2_East_Crossing_3",
+      "scenario_name": "Scenario_2_East_Crossing",
+      "start_positions": {
+        "robot_1": [
+          2,
+          7
+        ],
+        "robot_2": [
+          3,
+          6
+        ],
+        "robot_3": [
+          2,
+          5
+        ]
+      },
+      "start_time": 1763664758.6223757,
+      "end_time": 1763665007.551702,
+      "duration": 248.92932629585266,
+      "tasks_assigned": 3,
+      "tasks_completed": 3,
+      "tasks_failed": 0,
+      "success_rate": 1.0,
+      "total_recoveries": 2,
+      "recovery_success_rate": 1.0,
+      "strategies_used": {
+        "reverse_and_turn_right": 2
+      },
+      "robot_stats": {
+        "robot_1": {
+          "attempts": 1,
+          "successes": 1,
+          "strategies": [
+            "reverse_and_turn_right"
+          ]
+        },
+        "robot_2": {
+          "attempts": 0,
+          "successes": 0,
+          "strategies": []
+        },
+        "robot_3": {
+          "attempts": 1,
+          "successes": 1,
+          "strategies": [
+            "reverse_and_turn_right"
+          ]
+        }
+      }
+    },
+    {
+      "trial_id": "Scenario_3_Diagonal_NE_1",
+      "scenario_name": "Scenario_3_Diagonal_NE",
+      "start_positions": {
+        "robot_1": [
+          3,
+          3
+        ],
+        "robot_2": [
+          2,
+          2
+        ],
+        "robot_3": [
+          4,
+          3
+        ]
+      },
+      "start_time": 1763665077.5603664,
+      "end_time": 1763665134.1424348,
+      "duration": 56.58206844329834,
+      "tasks_assigned": 3,
+      "tasks_completed": 3,
+      "tasks_failed": 0,
+      "success_rate": 1.0,
+      "total_recoveries": 0,
+      "recovery_success_rate": 0,
+      "strategies_used": {},
+      "robot_stats": {
+        "robot_1": {
+          "attempts": 0,
+          "successes": 0,
+          "strategies": []
+        },
+        "robot_2": {
+          "attempts": 0,
+          "successes": 0,
+          "strategies": []
+        },
+        "robot_3": {
+          "attempts": 0,
+          "successes": 0,
+          "strategies": []
+        }
+      }
+    },
+    {
+      "trial_id": "Scenario_3_Diagonal_NE_2",
+      "scenario_name": "Scenario_3_Diagonal_NE",
+      "start_positions": {
+        "robot_1": [
+          3,
+          3
+        ],
+        "robot_2": [
+          2,
+          2
+        ],
+        "robot_3": [
+          4,
+          3
+        ]
+      },
+      "start_time": 1763665204.161055,
+      "end_time": 1763665259.8716269,
+      "duration": 55.71057176589966,
+      "tasks_assigned": 3,
+      "tasks_completed": 3,
+      "tasks_failed": 0,
+      "success_rate": 1.0,
+      "total_recoveries": 0,
+      "recovery_success_rate": 0,
+      "strategies_used": {},
+      "robot_stats": {
+        "robot_1": {
+          "attempts": 0,
+          "successes": 0,
+          "strategies": []
+        },
+        "robot_2": {
+          "attempts": 0,
+          "successes": 0,
+          "strategies": []
+        },
+        "robot_3": {
+          "attempts": 0,
+          "successes": 0,
+          "strategies": []
+        }
+      }
+    },
+    {
+      "trial_id": "Scenario_3_Diagonal_NE_3",
+      "scenario_name": "Scenario_3_Diagonal_NE",
+      "start_positions": {
+        "robot_1": [
+          3,
+          3
+        ],
+        "robot_2": [
+          2,
+          2
+        ],
+        "robot_3": [
+          4,
+          3
+        ]
+      },
+      "start_time": 1763665329.8792922,
+      "end_time": 1763665386.9438794,
+      "duration": 57.064587116241455,
+      "tasks_assigned": 3,
+      "tasks_completed": 3,
+      "tasks_failed": 0,
+      "success_rate": 1.0,
+      "total_recoveries": 0,
+      "recovery_success_rate": 0,
+      "strategies_used": {},
+      "robot_stats": {
+        "robot_1": {
+          "attempts": 0,
+          "successes": 0,
+          "strategies": []
+        },
+        "robot_2": {
+          "attempts": 0,
+          "successes": 0,
+          "strategies": []
+        },
+        "robot_3": {
+          "attempts": 0,
+          "successes": 0,
+          "strategies": []
+        }
+      }
+    },
+    {
+      "trial_id": "Scenario_4_Center_Targets_1",
+      "scenario_name": "Scenario_4_Center_Targets",
+      "start_positions": {
+        "robot_1": [
+          6,
+          2
+        ],
+        "robot_2": [
+          7,
+          3
+        ],
+        "robot_3": [
+          5,
+          2
+        ]
+      },
+      "start_time": 1763665456.9592845,
+      "end_time": 1763665508.6965852,
+      "duration": 51.737300634384155,
+      "tasks_assigned": 3,
+      "tasks_completed": 3,
+      "tasks_failed": 0,
+      "success_rate": 1.0,
+      "total_recoveries": 0,
+      "recovery_success_rate": 0,
+      "strategies_used": {},
+      "robot_stats": {
+        "robot_1": {
+          "attempts": 0,
+          "successes": 0,
+          "strategies": []
+        },
+        "robot_2": {
+          "attempts": 0,
+          "successes": 0,
+          "strategies": []
+        },
+        "robot_3": {
+          "attempts": 0,
+          "successes": 0,
+          "strategies": []
+        }
+      }
+    },
+    {
+      "trial_id": "Scenario_4_Center_Targets_2",
+      "scenario_name": "Scenario_4_Center_Targets",
+      "start_positions": {
+        "robot_1": [
+          6,
+          2
+        ],
+        "robot_2": [
+          7,
+          3
+        ],
+        "robot_3": [
+          5,
+          2
+        ]
+      },
+      "start_time": 1763665578.707128,
+      "end_time": 1763665631.4670727,
+      "duration": 52.759944677352905,
+      "tasks_assigned": 3,
+      "tasks_completed": 3,
+      "tasks_failed": 0,
+      "success_rate": 1.0,
+      "total_recoveries": 0,
+      "recovery_success_rate": 0,
+      "strategies_used": {},
+      "robot_stats": {
+        "robot_1": {
+          "attempts": 0,
+          "successes": 0,
+          "strategies": []
+        },
+        "robot_2": {
+          "attempts": 0,
+          "successes": 0,
+          "strategies": []
+        },
+        "robot_3": {
+          "attempts": 0,
+          "successes": 0,
+          "strategies": []
+        }
+      }
+    },
+    {
+      "trial_id": "Scenario_4_Center_Targets_3",
+      "scenario_name": "Scenario_4_Center_Targets",
+      "start_positions": {
+        "robot_1": [
+          6,
+          2
+        ],
+        "robot_2": [
+          7,
+          3
+        ],
+        "robot_3": [
+          5,
+          2
+        ]
+      },
+      "start_time": 1763665701.485118,
+      "end_time": 1763665756.4497697,
+      "duration": 54.96465182304382,
+      "tasks_assigned": 3,
+      "tasks_completed": 3,
+      "tasks_failed": 0,
+      "success_rate": 1.0,
+      "total_recoveries": 0,
+      "recovery_success_rate": 0,
+      "strategies_used": {},
+      "robot_stats": {
+        "robot_1": {
+          "attempts": 0,
+          "successes": 0,
+          "strategies": []
+        },
+        "robot_2": {
+          "attempts": 0,
+          "successes": 0,
+          "strategies": []
+        },
+        "robot_3": {
+          "attempts": 0,
+          "successes": 0,
+          "strategies": []
+        }
+      }
+    },
+    {
+      "trial_id": "Scenario_5_Mixed_Directions_1",
+      "scenario_name": "Scenario_5_Mixed_Directions",
+      "start_positions": {
+        "robot_1": [
+          2,
+          6
+        ],
+        "robot_2": [
+          6,
+          2
+        ],
+        "robot_3": [
+          3,
+          3
+        ]
+      },
+      "start_time": 1763665826.4562762,
+      "end_time": 1763665881.2508204,
+      "duration": 54.7945442199707,
+      "tasks_assigned": 3,
+      "tasks_completed": 3,
+      "tasks_failed": 0,
+      "success_rate": 1.0,
+      "total_recoveries": 2,
+      "recovery_success_rate": 1.0,
+      "strategies_used": {
+        "reverse_and_turn_right": 1,
+        "reverse_only": 1
+      },
+      "robot_stats": {
+        "robot_1": {
+          "attempts": 1,
+          "successes": 1,
+          "strategies": [
+            "reverse_and_turn_right"
+          ]
+        },
+        "robot_2": {
+          "attempts": 1,
+          "successes": 1,
+          "strategies": [
+            "reverse_only"
+          ]
+        },
+        "robot_3": {
+          "attempts": 0,
+          "successes": 0,
+          "strategies": []
+        }
+      }
+    },
+    {
+      "trial_id": "Scenario_5_Mixed_Directions_2",
+      "scenario_name": "Scenario_5_Mixed_Directions",
+      "start_positions": {
+        "robot_1": [
+          2,
+          6
+        ],
+        "robot_2": [
+          6,
+          2
+        ],
+        "robot_3": [
+          3,
+          3
+        ]
+      },
+      "start_time": 1763665951.2574592,
+      "end_time": 1763666010.0632799,
+      "duration": 58.80582070350647,
+      "tasks_assigned": 3,
+      "tasks_completed": 3,
+      "tasks_failed": 0,
+      "success_rate": 1.0,
+      "total_recoveries": 3,
+      "recovery_success_rate": 1.0,
+      "strategies_used": {
+        "reverse_and_turn_right": 1,
+        "reverse_only": 2
+      },
+      "robot_stats": {
+        "robot_1": {
+          "attempts": 1,
+          "successes": 1,
+          "strategies": [
+            "reverse_and_turn_right"
+          ]
+        },
+        "robot_2": {
+          "attempts": 2,
+          "successes": 2,
+          "strategies": [
+            "reverse_only",
+            "reverse_only"
+          ]
+        },
+        "robot_3": {
+          "attempts": 0,
+          "successes": 0,
+          "strategies": []
+        }
+      }
+    },
+    {
+      "trial_id": "Scenario_5_Mixed_Directions_3",
+      "scenario_name": "Scenario_5_Mixed_Directions",
+      "start_positions": {
+        "robot_1": [
+          2,
+          6
+        ],
+        "robot_2": [
+          6,
+          2
+        ],
+        "robot_3": [
+          3,
+          3
+        ]
+      },
+      "start_time": 1763666080.0778558,
+      "end_time": 1763666157.6929781,
+      "duration": 77.61512231826782,
+      "tasks_assigned": 3,
+      "tasks_completed": 3,
+      "tasks_failed": 0,
+      "success_rate": 1.0,
+      "total_recoveries": 2,
+      "recovery_success_rate": 1.0,
+      "strategies_used": {
+        "reverse_and_turn_right": 1,
+        "reverse_only": 1
+      },
+      "robot_stats": {
+        "robot_1": {
+          "attempts": 1,
+          "successes": 1,
+          "strategies": [
+            "reverse_and_turn_right"
+          ]
+        },
+        "robot_2": {
+          "attempts": 1,
+          "successes": 1,
+          "strategies": [
+            "reverse_only"
+          ]
+        },
+        "robot_3": {
+          "attempts": 0,
+          "successes": 0,
+          "strategies": []
+        }
+      }
+    }
+  ]
+}

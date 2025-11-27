@@ -1,0 +1,16 @@
+{
+  "status": "HEALTHY",
+  "uptime": 1764195007.9158556,
+  "metrics": {
+    "tasks_assigned": 0,
+    "tasks_completed": 45,
+    "recoveries_triggered": 21,
+    "recoveries_successful": 21,
+    "token_usage_simulated": 0,
+    "api_latency_ms": []
+  },
+  "performance": {
+    "avg_latency_ms": 0,
+    "throughput": "45 tasks/session"
+  }
+}
