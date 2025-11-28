@@ -1,0 +1,328 @@
+{
+  "experiences": [
+    {
+      "robot_id": "robot_1",
+      "location": [
+        7,
+        6
+      ],
+      "strategy": "reverse_only",
+      "success": true
+    },
+    {
+      "robot_id": "robot_1",
+      "location": [
+        7,
+        6
+      ],
+      "strategy": "reverse_only",
+      "success": true
+    },
+    {
+      "robot_id": "robot_3",
+      "location": [
+        5,
+        6
+      ],
+      "strategy": "reverse_only",
+      "success": true
+    },
+    {
+      "robot_id": "robot_2",
+      "location": [
+        6,
+        6
+      ],
+      "strategy": "reverse_only",
+      "success": true
+    },
+    {
+      "robot_id": "robot_3",
+      "location": [
+        5,
+        6
+      ],
+      "strategy": "reverse_only",
+      "success": true
+    },
+    {
+      "robot_id": "robot_1",
+      "location": [
+        7,
+        6
+      ],
+      "strategy": "reverse_only",
+      "success": true
+    },
+    {
+      "robot_id": "robot_1",
+      "location": [
+        7,
+        6
+      ],
+      "strategy": "reverse_only",
+      "success": true
+    },
+    {
+      "robot_id": "robot_2",
+      "location": [
+        6,
+        6
+      ],
+      "strategy": "reverse_only",
+      "success": true
+    },
+    {
+      "robot_id": "robot_3",
+      "location": [
+        5,
+        6
+      ],
+      "strategy": "reverse_only",
+      "success": true
+    },
+    {
+      "robot_id": "robot_3",
+      "location": [
+        5,
+        6
+      ],
+      "strategy": "reverse_only",
+      "success": true
+    },
+    {
+      "robot_id": "robot_1",
+      "location": [
+        7,
+        6
+      ],
+      "strategy": "reverse_only",
+      "success": true
+    },
+    {
+      "robot_id": "robot_1",
+      "location": [
+        7,
+        6
+      ],
+      "strategy": "reverse_only",
+      "success": true
+    },
+    {
+      "robot_id": "robot_3",
+      "location": [
+        5,
+        6
+      ],
+      "strategy": "reverse_only",
+      "success": true
+    },
+    {
+      "robot_id": "robot_3",
+      "location": [
+        5,
+        6
+      ],
+      "strategy": "reverse_only",
+      "success": true
+    },
+    {
+      "robot_id": "robot_2",
+      "location": [
+        6,
+        6
+      ],
+      "strategy": "reverse_only",
+      "success": true
+    },
+    {
+      "robot_id": "robot_1",
+      "location": [
+        6,
+        7
+      ],
+      "strategy": "reverse_and_turn_right",
+      "success": true
+    },
+    {
+      "robot_id": "robot_1",
+      "location": [
+        6,
+        7
+      ],
+      "strategy": "reverse_and_turn_right",
+      "success": true
+    },
+    {
+      "robot_id": "robot_3",
+      "location": [
+        6,
+        5
+      ],
+      "strategy": "reverse_and_turn_right",
+      "success": true
+    },
+    {
+      "robot_id": "robot_3",
+      "location": [
+        6,
+        5
+      ],
+      "strategy": "reverse_and_turn_right",
+      "success": true
+    },
+    {
+      "robot_id": "robot_3",
+      "location": [
+        6,
+        5
+      ],
+      "strategy": "reverse_and_turn_right",
+      "success": true
+    },
+    {
+      "robot_id": "robot_3",
+      "location": [
+        6,
+        5
+      ],
+      "strategy": "reverse_and_turn_right",
+      "success": true
+    },
+    {
+      "robot_id": "robot_1",
+      "location": [
+        6,
+        7
+      ],
+      "strategy": "reverse_and_turn_right",
+      "success": true
+    },
+    {
+      "robot_id": "robot_1",
+      "location": [
+        6,
+        7
+      ],
+      "strategy": "reverse_and_turn_right",
+      "success": true
+    },
+    {
+      "robot_id": "robot_1",
+      "location": [
+        6,
+        7
+      ],
+      "strategy": "reverse_and_turn_right",
+      "success": true
+    },
+    {
+      "robot_id": "robot_1",
+      "location": [
+        6,
+        7
+      ],
+      "strategy": "reverse_and_turn_right",
+      "success": true
+    },
+    {
+      "robot_id": "robot_3",
+      "location": [
+        6,
+        5
+      ],
+      "strategy": "reverse_and_turn_right",
+      "success": true
+    },
+    {
+      "robot_id": "robot_3",
+      "location": [
+        6,
+        5
+      ],
+      "strategy": "reverse_and_turn_right",
+      "success": true
+    },
+    {
+      "robot_id": "robot_1",
+      "location": [
+        6,
+        6
+      ],
+      "strategy": "reverse_and_turn_right",
+      "success": true
+    },
+    {
+      "robot_id": "robot_1",
+      "location": [
+        6,
+        6
+      ],
+      "strategy": "reverse_and_turn_right",
+      "success": true
+    },
+    {
+      "robot_id": "robot_2",
+      "location": [
+        6,
+        6
+      ],
+      "strategy": "reverse_only",
+      "success": true
+    },
+    {
+      "robot_id": "robot_2",
+      "location": [
+        6,
+        6
+      ],
+      "strategy": "reverse_only",
+      "success": true
+    },
+    {
+      "robot_id": "robot_1",
+      "location": [
+        6,
+        6
+      ],
+      "strategy": "reverse_and_turn_right",
+      "success": true
+    },
+    {
+      "robot_id": "robot_1",
+      "location": [
+        6,
+        6
+      ],
+      "strategy": "reverse_and_turn_right",
+      "success": true
+    },
+    {
+      "robot_id": "robot_1",
+      "location": [
+        6,
+        6
+      ],
+      "strategy": "reverse_and_turn_right",
+      "success": true
+    },
+    {
+      "robot_id": "robot_1",
+      "location": [
+        6,
+        6
+      ],
+      "strategy": "reverse_and_turn_right",
+      "success": true
+    },
+    {
+      "robot_id": "robot_2",
+      "location": [
+        6,
+        6
+      ],
+      "strategy": "reverse_only",
+      "success": true
+    }
+  ]
+}
