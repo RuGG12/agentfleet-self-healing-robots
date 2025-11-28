@@ -1,0 +1,12 @@
+{"timestamp": "2025-11-28T21:38:49.100555", "level": "INFO", "service": "Manager", "message": "Task_Assigned", "trace_id": null, "span_id": "872075a6", "robot_id": "robot_1", "task_id": "task_robot_1_7_9", "target": [7, 9]}
+{"timestamp": "2025-11-28T21:38:49.102045", "level": "INFO", "service": "Manager", "message": "Task_Assigned", "trace_id": null, "span_id": "3dcecf75", "robot_id": "robot_2", "task_id": "task_robot_2_6_9", "target": [6, 9]}
+{"timestamp": "2025-11-28T21:38:49.103413", "level": "INFO", "service": "Manager", "message": "Task_Assigned", "trace_id": null, "span_id": "cc7bc2a9", "robot_id": "robot_3", "task_id": "task_robot_3_5_9", "target": [5, 9]}
+{"timestamp": "2025-11-28T21:38:49.654934", "level": "INFO", "service": "Orchestrator", "message": "Task_Started", "trace_id": null, "span_id": "dda9460f", "robot_id": "robot_1", "target": [7, 9]}
+{"timestamp": "2025-11-28T21:38:49.655690", "level": "INFO", "service": "Manager", "message": "Clearance_Check", "trace_id": null, "span_id": "75dafa3b", "robot_id": "robot_1", "decision": "GRANTED"}
+{"timestamp": "2025-11-28T21:38:50.961254", "level": "INFO", "service": "Orchestrator", "message": "Task_Started", "trace_id": null, "span_id": "ebddb98e", "robot_id": "robot_2", "target": [6, 9]}
+{"timestamp": "2025-11-28T21:38:50.962399", "level": "INFO", "service": "Manager", "message": "Clearance_Check", "trace_id": null, "span_id": "d929bfb6", "robot_id": "robot_2", "decision": "GRANTED"}
+{"timestamp": "2025-11-28T21:38:52.175130", "level": "INFO", "service": "Orchestrator", "message": "Task_Started", "trace_id": null, "span_id": "1bb1a1fb", "robot_id": "robot_3", "target": [5, 9]}
+{"timestamp": "2025-11-28T21:38:52.179602", "level": "INFO", "service": "Manager", "message": "Clearance_Check", "trace_id": null, "span_id": "34490d13", "robot_id": "robot_3", "decision": "GRANTED"}
+{"timestamp": "2025-11-28T21:41:50.944787", "level": "INFO", "service": "Orchestrator", "message": "Task_Completed", "trace_id": null, "span_id": "b3ec0e2a", "duration": 167}
+{"timestamp": "2025-11-28T21:42:34.588861", "level": "INFO", "service": "Orchestrator", "message": "Task_Completed", "trace_id": null, "span_id": "97cbc3af", "duration": 195}
+{"timestamp": "2025-11-28T21:43:43.434824", "level": "INFO", "service": "Orchestrator", "message": "Task_Completed", "trace_id": null, "span_id": "638d5634", "duration": 238}
