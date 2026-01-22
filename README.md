@@ -112,7 +112,7 @@ This progression demonstrates the power of **iterative agent development** using
 **1. Clone Repository**
 ```bash
 git clone https://github.com/RuGG12/agentfleet-self-healing-robots.git
-cd agent_fleet_code
+cd  agentfleet-self-healing-robots
 ```
 
 **2. Install Dependencies**
