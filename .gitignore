@@ -1,0 +1,84 @@
+# =============================================================================
+# AgentFleet .gitignore
+# =============================================================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+ENV/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# C++ Build artifacts
+build/
+cmake-build-*/
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local development
+*.log
+*.local
+.env
+.env.local
+
+# Database files (keep sample but ignore local instances)
+# agent_fleet.db  # Uncomment if you want to ignore DB
+
+# Evaluation outputs (optional - may want to keep for proof)
+# evaluation_results/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Docker
+.docker/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
