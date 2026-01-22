@@ -583,10 +583,6 @@ This is a competition submission, but contributions are welcome post-deadline!
 - [Navigation2](https://navigation.ros.org/)
 - [Gazebo Integration](http://gazebosim.org/tutorials)
 
-### Academic Papers
-- *Multi-Agent Reinforcement Learning in Robotics* (IEEE 2024)
-- *Context-Aware Recovery in Autonomous Systems* (NeurIPS 2023)
-
 ---
 
 ## 🙋 Contact & Support
