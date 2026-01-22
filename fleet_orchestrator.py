@@ -47,7 +47,7 @@ from sim_tools import WarehouseSim
 
 
 # --- Configuration & Setup ---
-DB_URL = "sqlite:///agent_fleet.db"
+DB_URL = "sqlite+aiosqlite:///agent_fleet.db"
 session_service = DatabaseSessionService(db_url=DB_URL)
 memory_service = InMemoryMemoryService()
 
