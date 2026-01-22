@@ -376,45 +376,63 @@ python scripts/verify_hal.py
 ## 📁 Project Structure
 
 ```
-agent_fleet_code/
+agentfleet-self-healing-robots/
 │
-├── evaluation_results/         # Generated outputs (logs, charts, data)
+├── src/hal/                        # 🆕 C++ Hardware Abstraction Layer
+│   ├── CMakeLists.txt              # CMake build config (ROS 2 + pybind11)
+│   ├── include/
+│   │   ├── robot_hal.hpp           # ROS 2 control interface (rclcpp)
+│   │   ├── collision_checker.hpp   # Fast 2D collision detection
+│   │   └── path_smoother.hpp       # Spline/Bezier path algorithms
+│   └── src/
+│       ├── robot_hal.cpp           # cmd_vel publisher, odom/scan subscribers
+│       ├── collision_checker.cpp   # Sticky zone + fleet conflict detection
+│       ├── path_smoother.cpp       # Catmull-Rom, Bezier, moving average
+│       └── bindings.cpp            # pybind11 Python bindings
 │
-├── ros_deployment/             # ROS 2 Integration & Launch
-│   ├── agent_fleet.db          # Instance-specific database for ROS run
-│   ├── fleet_launch_demo.sh    # Main shell script to launch the ROS demo
-│   ├── fleet_launch.py         # ROS node wrapper for the fleet
-│   ├── fleet_observability.jsonl
-│   ├── fleet_orchestrator.py   # Entry point available within ROS context
-│   ├── manager_agent.py        # Manager logic available to ROS nodes
+├── scripts/                        # 🆕 Build & Verification Tools
+│   ├── build_hal.sh                # Local HAL build script
+│   └── verify_hal.py               # C++ module verification tests
+│
+├── ros_deployment/                 # ROS 2 Integration & Launch
+│   ├── hal_wrapper.py              # 🆕 Python HAL wrapper (C++ fallback)
+│   ├── ros_tools.py                # ROS tools (uses C++ HAL when available)
+│   ├── fleet_launch_demo.sh        # Shell script to launch ROS demo
+│   ├── fleet_launch.py             # ROS node wrapper for the fleet
+│   ├── spawn_fleet.py              # Spawn robots in Gazebo
+│   ├── spawn_visuals.py            # Visual markers for simulation
+│   ├── fleet_orchestrator.py       # Entry point within ROS context
+│   ├── manager_agent.py            # Manager logic for ROS nodes
 │   ├── manager_tools.py
+│   ├── worker_agent.py             # Worker logic for ROS nodes
 │   ├── observability.py
 │   ├── recovery_database.py
 │   ├── recovery_history.json
-│   ├── ros_tools.py            # Hardware Abstraction Layer (HAL) for ROS
 │   ├── sim_tools.py
-│   ├── spawn_fleet.py          # Script to spawn robots in Gazebo/Sim
-│   ├── spawn_visuals.py        # Visual markers for simulation
-│   ├── tool_api.py             # Tool interface definitions
-│   ├── tool_wrappers.py        # Wrappers for agent tool execution
-│   └── worker_agent.py         # Worker logic available to ROS nodes
+│   ├── tool_api.py
+│   └── tool_wrappers.py
 │
-├── agent_fleet.db              # SQLite Long-Term Memory (LTM) database
-├── enterprise_dashboard.json   # Metrics and status dashboard output
-├── evaluate_fleet.py           # Benchmark suite to run fleet trials
-├── fleet_observability.jsonl   # JSON Lines log for fleet events
-├── fleet_orchestrator.py       # Main Python entry point (non-ROS)
-├── LICENSE
-├── manager_agent.py            # High-level Orchestrator Agent logic
-├── manager_tools.py            # Implementation of management tools
-├── observability.py            # Structured logging and monitoring
-├── README.md                   # Project documentation
-├── recovery_database.py        # Persistent memory and fault recovery
-├── recovery_history.json       # Log of recovery actions taken
-├── sim_tools.py                # Custom simulation engine components
-├── tool_api.py                 # Abstract Base Classes/API for Tools
-├── tool_wrappers.py            # Logic to wrap functions as Agent tools
-└── worker_agent.py             # Robot Controller Agent logic
+├── evaluation_results/             # Generated outputs (logs, charts)
+│
+├── Dockerfile                      # 🆕 Multi-stage build (C++ + Python)
+├── .gitignore                      # 🆕 Git ignore patterns
+├── fleet_orchestrator.py           # Main Python entry point
+├── evaluate_fleet.py               # Benchmark suite (15 trials)
+├── manager_agent.py                # Orchestrator Agent logic
+├── manager_tools.py                # Management tool implementations
+├── worker_agent.py                 # Robot Controller Agent logic
+├── sim_tools.py                    # Custom simulation engine
+├── tool_api.py                     # Abstract Base Classes for Tools
+├── tool_wrappers.py                # Function-to-tool wrappers
+├── observability.py                # Structured logging & monitoring
+├── recovery_database.py            # Persistent fault recovery memory
+├── recovery_history.json           # Log of recovery actions
+├── enterprise_dashboard.json       # Metrics dashboard output
+├── fleet_observability.jsonl       # JSON Lines event log
+├── agent_fleet.db                  # SQLite Long-Term Memory database
+├── requirements.txt                # Python dependencies
+├── LICENSE                         # CC BY-SA 4.0
+└── README.md                       # This file
 ```
 
 ---
@@ -452,6 +470,12 @@ agent_fleet_code/
   "target": [7, 9]
 }
 ```
+
+**5. C++ Performance Layer**
+- **pybind11 bindings** for seamless Python-C++ interop
+- **4-15x speedup** on critical path operations
+- **Fault injection API** for testing motor timeouts, packet drops, sensor freezes
+- **Automatic fallback** to Python when C++ unavailable
 
 ---
 
@@ -519,6 +543,8 @@ GROUP BY strategy;
 - [x] ROS 2 integration
 - [x] Enterprise observability
 - [x] Adversarial evaluation suite
+- [x] **C++ Hardware Abstraction Layer (HAL)** with pybind11 bindings
+- [x] **Multi-stage Docker** build for production deployment
 
 ### Phase 2: 🚧 In Progress
 - [ ] Multi-environment transfer learning
